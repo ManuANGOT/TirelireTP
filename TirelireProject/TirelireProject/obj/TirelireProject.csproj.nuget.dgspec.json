@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireProject\\TirelireProject\\TirelireProject.csproj": {}
+    "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireTP\\TirelireProject\\TirelireProject\\TirelireProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireProject\\TirelireProject\\TirelireProject.csproj": {
+    "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireTP\\TirelireProject\\TirelireProject\\TirelireProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireProject\\TirelireProject\\TirelireProject.csproj",
+        "projectUniqueName": "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireTP\\TirelireProject\\TirelireProject\\TirelireProject.csproj",
         "projectName": "TirelireProject",
-        "projectPath": "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireProject\\TirelireProject\\TirelireProject.csproj",
+        "projectPath": "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireTP\\TirelireProject\\TirelireProject\\TirelireProject.csproj",
         "packagesPath": "C:\\Users\\GK\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireProject\\TirelireProject\\obj\\",
+        "outputPath": "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireTP\\TirelireProject\\TirelireProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,22 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
