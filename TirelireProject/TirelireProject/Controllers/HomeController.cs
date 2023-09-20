@@ -13,20 +13,24 @@ namespace TirelireProject.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult ClientPage()
         {
-            return View();
+            return View("Client");
         }
 
-        public IActionResult Privacy()
+        public IActionResult AdminPage()
         {
-            return View();
+            return View("Admin");
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult ModPage()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View("Mod");
+        }
+
+        public IActionResult AssistPage()
+        {
+            return View("Assist");
         }
     }
 }
