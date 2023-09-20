@@ -2,7 +2,7 @@
 
 namespace TirelireProject.Models
 {
-    public class ProductModel
+    public class Product
     {
         public int Id { get; set; }
 

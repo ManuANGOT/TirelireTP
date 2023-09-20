@@ -28,6 +28,6 @@ namespace TirelireProject.Models
         public int CartShipping { get; set; }
 
         [Display(Name = "Prix du panier")]
-        public int? CartPrice { get; set; }
+        public int CartPriceHT { get; set; }
     }
 }
