@@ -1,0 +1,59 @@
+﻿@model TirelireProject.Models.ShoppingCart
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>ShoppingCart</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="CartDate" class="control-label"></label>
+                <input asp-for="CartDate" class="form-control" />
+                <span asp-validation-for="CartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CartProductAdded" class="control-label"></label>
+                <input asp-for="CartProductAdded" class="form-control" />
+                <span asp-validation-for="CartProductAdded" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CartProductCancelled" class="control-label"></label>
+                <input asp-for="CartProductCancelled" class="form-control" />
+                <span asp-validation-for="CartProductCancelled" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CartDetails" class="control-label"></label>
+                <input asp-for="CartDetails" class="form-control" />
+                <span asp-validation-for="CartDetails" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CartShipping" class="control-label"></label>
+                <input asp-for="CartShipping" class="form-control" />
+                <span asp-validation-for="CartShipping" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CartPriceHT" class="control-label"></label>
+                <input asp-for="CartPriceHT" class="form-control" />
+                <span asp-validation-for="CartPriceHT" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

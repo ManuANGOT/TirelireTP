@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ namespace TirelireProject.Models
 {
     public class Customer
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Le nom du client est requis.")]
@@ -31,5 +33,7 @@ namespace TirelireProject.Models
         [StringLength(100, ErrorMessage = "Le mot de passe du client doit comporter au moins {2} caractères.", MinimumLength = 6)]
         [DataType(DataType.Password)]
         public string Password { get; set; }
+
+        public virtual ICollection<Customer> Customers { get;}= new List<Customer>();
     }
 }

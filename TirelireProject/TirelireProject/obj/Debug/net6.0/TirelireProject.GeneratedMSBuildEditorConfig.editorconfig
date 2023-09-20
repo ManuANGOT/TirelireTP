@@ -16,24 +16,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\GK\Desktop\DiversManu\TirelireTP\TitelireTp\TirelireTP\TirelireProject\TirelireProject
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/CustomerViews/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJWaWV3c1xDcmVhdGUuY3NodG1s
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/Customers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/CustomerViews/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJWaWV3c1xEZWxldGUuY3NodG1s
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/Customers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/CustomerViews/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJWaWV3c1xEZXRhaWxzLmNzaHRtbA==
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/Customers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/CustomerViews/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJWaWV3c1xFZGl0LmNzaHRtbA==
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/Customers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/CustomerViews/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJWaWV3c1xJbmRleC5jc2h0bWw=
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/Customers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/Home/Admin.cshtml]
@@ -60,12 +60,72 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/Products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/Products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/Products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/Roles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/Roles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/Roles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/Roles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/Roles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/ShoppingCarts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/ShoppingCarts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/ShoppingCarts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/ShoppingCarts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/ShoppingCarts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/GK/Desktop/DiversManu/TirelireTP/TitelireTp/TirelireTP/TirelireProject/TirelireProject/Views/_ViewImports.cshtml]
