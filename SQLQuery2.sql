@@ -43,3 +43,27 @@ INSERT INTO TirelireRoles (RoleName) VALUES ('Client');
 INSERT INTO TirelireRoles (RoleName) VALUES ('Admin');
 INSERT INTO TirelireRoles (RoleName) VALUES ('Mod');
 INSERT INTO TirelireRoles (RoleName) VALUES ('Assist');
+
+CREATE TABLE Opinions (
+id_opinion INT PRIMARY KEY IDENTITY(1,1),
+is_valid NVARCHAR(20) NOT NULL,
+is_moderate NVARCHAR(20) NOT NULL,
+is_assist NVARCHAR(20) NOT NULL,
+is_deleted NVARCHAR(20) NOT NULL,
+);
+
+CREATE TABLE customer_Address (
+id_Address INT PRIMARY KEY IDENTITY(1,1),
+street_number NVARCHAR(20) NOT NULL,
+street NVARCHAR(200) NOT NULL,
+zip_code NVARCHAR(20) NOT NULL,
+city NVARCHAR(50) NOT NULL,
+country NVARCHAR(50) NOT NULL,
+phone NVARCHAR(50) NOT NULL,
+);
+
+CREATE TABLE UserStatus(
+id_Status INT PRIMARY KEY IDENTITY(1,1),
+VisitStatus INT NOT NULL,
+
+);

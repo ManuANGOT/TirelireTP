@@ -1,15 +1,16 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewBag.Title = "Home Page";
 }
-
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>
-        Welcome to my piggy project
-    </a>.</p>
-
-</div>
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+        </div>
+    </section>
+}
 
 @if (User.IsInRole("Client"))
 {

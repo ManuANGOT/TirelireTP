@@ -1,10 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TirelireProject.Models
 {
     public class ShoppingCart
     {
-        public int CartId { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "La date du panier est requise.")]
         [Display(Name = "Date du panier")]
@@ -29,5 +31,7 @@ namespace TirelireProject.Models
 
         [Display(Name = "Prix du panier")]
         public int CartPriceHT { get; set; }
+
+        public virtual ICollection<Product> Products { get; } = new List<Product>();
     }
 }

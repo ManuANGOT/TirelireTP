@@ -13,6 +13,13 @@ namespace TirelireProject.Controllers
             _logger = logger;
         }
 
+        public ActionResult Index()
+        {
+            ViewBag.Message = "Welcome to My piggy project";
+
+            return View();
+        }
+
         public IActionResult ClientPage()
         {
             return View("Client");
