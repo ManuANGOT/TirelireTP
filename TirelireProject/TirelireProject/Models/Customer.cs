@@ -34,6 +34,43 @@ namespace TirelireProject.Models
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        public virtual ICollection<Customer> Customers { get;}= new List<Customer>();
+
+
+        public virtual ICollection<Customer> Customers { get; } = new List<Customer>();
+
+        public ShoppingCart ShoppingCart { get; set; }
+
+        public void AddToCart(Product product, int quantity)
+        {
+            {   // Création nouveau panier
+                if (ShoppingCart == null)
+                {
+                    ShoppingCart = new ShoppingCart(); 
+                }
+
+                // Vérifiez si le produit est déjà dans le panier
+                var existingCartItem = ShoppingCart.CartItems.FirstOrDefault(item => item.Product.Id == product.Id);
+
+                if (existingCartItem != null)
+                {
+                    // Si le produit est déjà dans le panier, augmentez simplement la quantité
+                    existingCartItem.Quantity += quantity;
+                }
+                else
+                {
+                    ShoppingCart.CartItems.Add(new CartItem
+                    {
+                        Product = product,
+                        Quantity = quantity
+                    });
+                }
+
+                // logique pour calculer le total du panier, les frais de livraison, etc.
+            }
+        }
+        public void RemoveFromCart(Product product)
+        {
+            // logique pour retirer un produit du panier
+        }
     }
 }

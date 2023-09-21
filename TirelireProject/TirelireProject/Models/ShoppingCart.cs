@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using TirelireProject.Models;
 
 namespace TirelireProject.Models
 {
@@ -32,6 +33,8 @@ namespace TirelireProject.Models
         [Display(Name = "Prix du panier")]
         public int CartPriceHT { get; set; }
 
+
         public virtual ICollection<Product> Products { get; } = new List<Product>();
+        public virtual ICollection<CartItem> CartItems { get; } = new CartItem[0];
     }
 }
