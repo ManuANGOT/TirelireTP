@@ -27,6 +27,18 @@ namespace TirelireProject.Controllers
                           Problem("Entity set 'TirelireProjectContext.ShoppingCart'  is null.");
         }
 
+        public IActionResult AddToCart(int productId)
+        {
+            // Ajouter un produit au panier du client
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult RemoveFromCart(int productId)
+        {
+            // Retirer un produit du panier du client
+            return RedirectToAction("Index");
+        }
+
         // GET: ShoppingCarts/Details/5
         public async Task<IActionResult> Details(int? id)
         {

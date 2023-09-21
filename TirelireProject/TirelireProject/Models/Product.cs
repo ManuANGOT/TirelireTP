@@ -59,5 +59,6 @@ namespace TirelireProject.Models
         public float ProductPrice { get; set; }
 
         public virtual ICollection<Product> Products { get; }=new List<Product>();
+        public int Quantity { get; internal set; }
     }
 }
