@@ -14,27 +14,86 @@ namespace TirelireProject.Models
         [DataType(DataType.DateTime)]
         public DateTime CartDate { get; set; }
 
-        [Required(ErrorMessage = "Le produit ajouté au panier est requis.")]
-        [Display(Name = "Produit ajouté au panier")]
-        public int CartProductAdded { get; set; }
-
-        [Required(ErrorMessage = "Le produit annulé du panier est requis.")]
-        [Display(Name = "Produit annulé du panier")]
-        public int CartProductCancelled { get; set; }
-
-        [Required(ErrorMessage = "Les détails du panier sont requis.")]
-        [Display(Name = "Détails du panier")]
-        public int CartDetails { get; set; }
-
-        [Required(ErrorMessage = "L'expédition du panier est requise.")]
-        [Display(Name = "Expédition du panier")]
-        public int CartShipping { get; set; }
-
         [Display(Name = "Prix du panier")]
-        public int CartPriceHT { get; set; }
+
+
+
+        // Clé étrangère pour lier ShoppingCart au Customer
+        public int CustomerId { get; set; } // id du client qui crée le panier
+        public virtual Customer Customer { get; set; }
+
+
+        public virtual ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
+       // Méthode pour calculer le total de la commande
+        public decimal CalculateTotalCartItems()
+        {
+            decimal totalCartItem = 0;
+            foreach (var cartItem in CartItems)
+            {
+                totalCartItem += cartItem.Product.ProductPrice * cartItem.Quantity;
+            }
+            return totalCartItem;
+        }
+
+        // Calcul des frais de livraison
+        public decimal CalculateShipping()
+        {
+            // Calcul des frais de livraison (3€ par 1,5Kg)
+            decimal totalWeight = 0;
+            foreach (var cartItem in CartItems)
+            {
+                totalWeight += (decimal)(cartItem.Product.ProductWeight ?? 0) * cartItem.Quantity;
+            }
+
+            decimal shippingCost = Math.Ceiling(totalWeight / 1.5M) * 3M;
+            return shippingCost;
+        }
+
+        [Display(Name = "Prix Total du panierHT")]
+        public decimal CalculateTotalCartHT()
+        {
+            decimal totalCartHT = 0;
+
+            // Calcul du total du panier HT en ajoutant le prix de chaque produit
+            foreach (var cartItem in CartItems)
+            {
+                decimal productPrice = cartItem.Product.ProductPrice;
+                int quantity = cartItem.Quantity;
+                totalCartHT += (productPrice * quantity);
+            }
+
+            // Ajout des frais de livraison
+            decimal shippingCost = CalculateShipping();
+            totalCartHT += shippingCost;
+
+            return totalCartHT;
+        }
+
+        [Display(Name = "Prix Total du panier TTC")]
+        public decimal CalculateTotalCartTTC()
+        {
+            decimal totalCartHT = CalculateTotalCartHT();
+            decimal tvaRate = 0.20m; // Taux de TVA de 20%
+
+            // Calcul du total du panier TTC en appliquant le taux de TVA
+            decimal totalCartTTC = totalCartHT * (1 + tvaRate);
+
+            return totalCartTTC;
+        }
+
+        // Validation de la commande
+        [Display(Name = "Le panier a été confirmé")]
+        public bool IsConfirmed { get; set; } = false; // Par défaut, le panier n'est pas confirmé
+
+
+        // Relation avec PaymentOrder
+        // Clé étrangère pour lier le ShoppingCart au PaymentOrder
+        public int? PaymentOrderId { get; set; }
+        // Propriété de navigation vers le PaymentOrder
+        public virtual PaymentOrder PaymentOrder { get; set; }
 
 
         public virtual ICollection<Product> Products { get; } = new List<Product>();
-        public virtual ICollection<CartItem> CartItems { get; } = new CartItem[0];
+
     }
 }

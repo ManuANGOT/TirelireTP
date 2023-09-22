@@ -7,7 +7,7 @@ namespace TirelireProject.Models
     public class Product
     {
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int Id { get; set; }
+        public int ProductId { get; set; }
 
         [Required(ErrorMessage = "Le nom du produit est requis.")]
         [StringLength(50, ErrorMessage = "Le nom du produit ne peut pas dépasser 50 caractères.")]
@@ -25,11 +25,11 @@ namespace TirelireProject.Models
 
         [Required(ErrorMessage = "La largeur du produit est requise.")]
         [Display(Name = "Largeur du produit")]
-        public string? ProductWidth { get; set; }
+        public int? ProductWidth { get; set; }
 
         [Required(ErrorMessage = "Le poids du produit est requis.")]
         [Display(Name = "Poids du produit")]
-        public string? ProductWeight { get; set; }
+        public int? ProductWeight { get; set; }
 
         [Required(ErrorMessage = "La longueur du produit est requise.")]
         [Display(Name = "Longueur du produit")]
@@ -56,7 +56,7 @@ namespace TirelireProject.Models
 
         [Required(ErrorMessage = "Le prix du produit est requis.")]
         [Display(Name = "Prix du produit")]
-        public float ProductPrice { get; set; }
+        public int ProductPrice { get; set; }
 
         public virtual ICollection<Product> Products { get; }=new List<Product>();
         public int Quantity { get; internal set; }

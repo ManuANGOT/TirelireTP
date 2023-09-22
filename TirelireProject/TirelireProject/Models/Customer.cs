@@ -12,7 +12,7 @@ namespace TirelireProject.Models
     public class Customer
     {
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int Id { get; set; }
+        public int CustomerId { get; set; }
 
         [Required(ErrorMessage = "Le nom du client est requis.")]
         [StringLength(50, ErrorMessage = "Le nom du client ne peut pas dépasser 50 caractères.")]
@@ -38,7 +38,10 @@ namespace TirelireProject.Models
 
         public virtual ICollection<Customer> Customers { get; } = new List<Customer>();
 
+        public virtual ICollection<ShoppingCart> ShoppingCarts { get; set; } = new List<ShoppingCart>();
+
         public ShoppingCart ShoppingCart { get; set; }
+        public object? PaymentOrder { get; internal set; }
 
         public void AddToCart(Product product, int quantity)
         {
@@ -49,7 +52,7 @@ namespace TirelireProject.Models
                 }
 
                 // Vérifiez si le produit est déjà dans le panier
-                var existingCartItem = ShoppingCart.CartItems.FirstOrDefault(item => item.Product.Id == product.Id);
+                var existingCartItem = ShoppingCart.CartItems.FirstOrDefault(item => item.Product.ProductId == product.ProductId);
 
                 if (existingCartItem != null)
                 {
