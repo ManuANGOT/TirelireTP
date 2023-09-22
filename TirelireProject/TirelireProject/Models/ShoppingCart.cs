@@ -14,10 +14,7 @@ namespace TirelireProject.Models
         [DataType(DataType.DateTime)]
         public DateTime CartDate { get; set; }
 
-        [Display(Name = "Prix du panier")]
-
-
-
+ 
         // Clé étrangère pour lier ShoppingCart au Customer
         public int CustomerId { get; set; } // id du client qui crée le panier
         public virtual Customer Customer { get; set; }
