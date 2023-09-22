@@ -36,7 +36,7 @@ namespace TirelireProject.Controllers
             }
 
             var customer = await _context.Customer
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.CustomerId == id);
             if (customer == null)
             {
                 return NotFound();
@@ -86,7 +86,7 @@ namespace TirelireProject.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,FirstName,Birthdate,Password")] Customer customer)
         {
-            if (id != customer.Id)
+            if (id != customer.CustomerId)
             {
                 return NotFound();
             }
@@ -100,7 +100,7 @@ namespace TirelireProject.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CustomerExists(customer.Id))
+                    if (!CustomerExists(customer.CustomerId))
                     {
                         return NotFound();
                     }
@@ -123,7 +123,7 @@ namespace TirelireProject.Controllers
             }
 
             var customer = await _context.Customer
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.CustomerId == id);
             if (customer == null)
             {
                 return NotFound();
@@ -153,7 +153,7 @@ namespace TirelireProject.Controllers
 
         private bool CustomerExists(int id)
         {
-          return (_context.Customer?.Any(e => e.Id == id)).GetValueOrDefault();
+          return (_context.Customer?.Any(e => e.CustomerId == id)).GetValueOrDefault();
         }
     }
 }

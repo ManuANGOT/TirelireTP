@@ -17,34 +17,22 @@
             @Html.DisplayFor(model => model.CartDate)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CartProductAdded)
+            @Html.DisplayNameFor(model => model.Customer)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CartProductAdded)
+            @Html.DisplayFor(model => model.Customer.FirstName)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CartProductCancelled)
+            @Html.DisplayNameFor(model => model.IsConfirmed)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CartProductCancelled)
+            @Html.DisplayFor(model => model.IsConfirmed)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CartDetails)
+            @Html.DisplayNameFor(model => model.PaymentOrderId)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CartDetails)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CartShipping)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CartShipping)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CartPriceHT)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CartPriceHT)
+            @Html.DisplayFor(model => model.PaymentOrderId)
         </dd>
     </dl>
 </div>

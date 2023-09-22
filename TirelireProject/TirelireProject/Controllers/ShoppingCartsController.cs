@@ -22,21 +22,8 @@ namespace TirelireProject.Controllers
         // GET: ShoppingCarts
         public async Task<IActionResult> Index()
         {
-              return _context.ShoppingCart != null ? 
-                          View(await _context.ShoppingCart.ToListAsync()) :
-                          Problem("Entity set 'TirelireProjectContext.ShoppingCart'  is null.");
-        }
-
-        public IActionResult AddToCart(int productId)
-        {
-            // Ajouter un produit au panier du client
-            return RedirectToAction("Index");
-        }
-
-        public IActionResult RemoveFromCart(int productId)
-        {
-            // Retirer un produit du panier du client
-            return RedirectToAction("Index");
+            var tirelireProjectContext = _context.ShoppingCart.Include(s => s.Customer);
+            return View(await tirelireProjectContext.ToListAsync());
         }
 
         // GET: ShoppingCarts/Details/5
@@ -48,6 +35,7 @@ namespace TirelireProject.Controllers
             }
 
             var shoppingCart = await _context.ShoppingCart
+                .Include(s => s.Customer)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (shoppingCart == null)
             {
@@ -60,13 +48,14 @@ namespace TirelireProject.Controllers
         // GET: ShoppingCarts/Create
         public IActionResult Create()
         {
+            ViewData["CustomerId"] = new SelectList(_context.Customer, "CustomerId", "FirstName");
             return View();
         }
 
         // POST: ShoppingCarts/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,CartDate,CartProductAdded,CartProductCancelled,CartDetails,CartShipping,CartPriceHT")] ShoppingCart shoppingCart)
+        public async Task<IActionResult> Create([Bind("Id,CartDate,CustomerId,IsConfirmed,PaymentOrderId")] ShoppingCart shoppingCart)
         {
             if (ModelState.IsValid)
             {
@@ -74,6 +63,7 @@ namespace TirelireProject.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["CustomerId"] = new SelectList(_context.Customer, "CustomerId", "FirstName", shoppingCart.CustomerId);
             return View(shoppingCart);
         }
 
@@ -90,13 +80,14 @@ namespace TirelireProject.Controllers
             {
                 return NotFound();
             }
+            ViewData["CustomerId"] = new SelectList(_context.Customer, "CustomerId", "FirstName", shoppingCart.CustomerId);
             return View(shoppingCart);
         }
 
         // POST: ShoppingCarts/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,CartDate,CartProductAdded,CartProductCancelled,CartDetails,CartShipping,CartPriceHT")] ShoppingCart shoppingCart)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,CartDate,CustomerId,IsConfirmed,PaymentOrderId")] ShoppingCart shoppingCart)
         {
             if (id != shoppingCart.Id)
             {
@@ -123,6 +114,7 @@ namespace TirelireProject.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["CustomerId"] = new SelectList(_context.Customer, "CustomerId", "FirstName", shoppingCart.CustomerId);
             return View(shoppingCart);
         }
 
@@ -135,6 +127,7 @@ namespace TirelireProject.Controllers
             }
 
             var shoppingCart = await _context.ShoppingCart
+                .Include(s => s.Customer)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (shoppingCart == null)
             {

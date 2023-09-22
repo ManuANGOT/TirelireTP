@@ -36,7 +36,7 @@ namespace TirelireProject.Controllers
             }
 
             var product = await _context.Product
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.ProductId == id);
             if (product == null)
             {
                 return NotFound();
@@ -52,11 +52,9 @@ namespace TirelireProject.Controllers
         }
 
         // POST: Products/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ProductName,ProductDescription,ProductHeight,ProductWidth,ProductWeight,ProductLength,ProductColor,ProductCapacity,ProductMaker,ProductImage,ProductPrice")] Product product)
+        public async Task<IActionResult> Create([Bind("ProductId,ProductName,ProductDescription,ProductHeight,ProductWidth,ProductWeight,ProductLength,ProductColor,ProductCapacity,ProductMaker,ProductImage,ProductPrice")] Product product)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +85,7 @@ namespace TirelireProject.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,ProductName,ProductDescription,ProductHeight,ProductWidth,ProductWeight,ProductLength,ProductColor,ProductCapacity,ProductMaker,ProductImage,ProductPrice")] Product product)
         {
-            if (id != product.Id)
+            if (id != product.ProductId)
             {
                 return NotFound();
             }
@@ -101,7 +99,7 @@ namespace TirelireProject.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ProductExists(product.Id))
+                    if (!ProductExists(product.ProductId))
                     {
                         return NotFound();
                     }
@@ -124,7 +122,7 @@ namespace TirelireProject.Controllers
             }
 
             var product = await _context.Product
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.ProductId == id);
             if (product == null)
             {
                 return NotFound();
@@ -154,7 +152,7 @@ namespace TirelireProject.Controllers
 
         private bool ProductExists(int id)
         {
-          return (_context.Product?.Any(e => e.Id == id)).GetValueOrDefault();
+          return (_context.Product?.Any(e => e.ProductId == id)).GetValueOrDefault();
         }
     }
 }

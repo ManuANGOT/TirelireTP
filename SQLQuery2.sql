@@ -22,14 +22,13 @@ CREATE TABLE Product (
 );
 
 CREATE TABLE Shopping_cart(
-cart_id INT PRIMARY KEY IDENTITY(1,1),
-cart_date DATETIME NOT NULL,
-cart_product_added INT NOT NULL,
-cart_product_cancelled INT NOT NULL,
-cart_details INT NOT NULL,
-cart_shipping INT NOT NULL,
-cart_priceHT INT NULL,
-cart_priceTTC INT NULL,
+Id INT PRIMARY KEY IDENTITY(1,1),
+CartDate DATETIME NOT NULL,
+totalCartItem DECIMAL NOT NULL,
+shippingCost DECIMAL NOT NULL,
+totalCartHT DECIMAL NOT NULL,
+totalCartTTC DECIMAL NOT NULL,
+CustomerId INT NOT NULL,
 
 );
 

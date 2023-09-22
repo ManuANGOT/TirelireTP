@@ -16,19 +16,13 @@
                 @Html.DisplayNameFor(model => model.CartDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CartProductAdded)
+                @Html.DisplayNameFor(model => model.Customer)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CartProductCancelled)
+                @Html.DisplayNameFor(model => model.IsConfirmed)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CartDetails)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CartShipping)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CartPriceHT)
+                @Html.DisplayNameFor(model => model.PaymentOrderId)
             </th>
             <th></th>
         </tr>
@@ -40,19 +34,13 @@
                 @Html.DisplayFor(modelItem => item.CartDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CartProductAdded)
+                @Html.DisplayFor(modelItem => item.Customer.FirstName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CartProductCancelled)
+                @Html.DisplayFor(modelItem => item.IsConfirmed)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CartDetails)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CartShipping)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CartPriceHT)
+                @Html.DisplayFor(modelItem => item.PaymentOrderId)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
