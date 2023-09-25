@@ -29,19 +29,27 @@ namespace TirelireProject.Models
         [DataType(DataType.Date)]
         public DateTime Birthdate { get; set; }
 
+        [Required(ErrorMessage = "L'email du client est requis.")]
+        [StringLength(100, ErrorMessage = "L'email du client doit comporter au moins {2} caractères.", MinimumLength = 6)]
+        [DataType(DataType.EmailAddress)]
+        public string EmailAddress { get; set; }
+
         [Required(ErrorMessage = "Le mot de passe du client est requis.")]
         [StringLength(100, ErrorMessage = "Le mot de passe du client doit comporter au moins {2} caractères.", MinimumLength = 6)]
         [DataType(DataType.Password)]
         public string Password { get; set; }
-
-
 
         public virtual ICollection<Customer> Customers { get; } = new List<Customer>();
 
         public virtual ICollection<ShoppingCart> ShoppingCarts { get; set; } = new List<ShoppingCart>();
 
         public ShoppingCart ShoppingCart { get; set; }
-        public object? PaymentOrder { get; internal set; }
+
+        public int? PaymentOrderId { get; set; }
+
+
+        [NotMapped]
+        public PaymentOrder PaymentOrder { get; set; }
 
         public void AddToCart(Product product, int quantity)
         {

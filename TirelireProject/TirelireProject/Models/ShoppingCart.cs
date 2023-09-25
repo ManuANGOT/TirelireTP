@@ -86,7 +86,6 @@ namespace TirelireProject.Models
         // Relation avec PaymentOrder
         // Clé étrangère pour lier le ShoppingCart au PaymentOrder
         public int? PaymentOrderId { get; set; }
-        // Propriété de navigation vers le PaymentOrder
         public virtual PaymentOrder PaymentOrder { get; set; }
 
 
