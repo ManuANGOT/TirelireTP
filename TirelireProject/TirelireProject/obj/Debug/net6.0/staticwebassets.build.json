@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AOXu4OVnVeTQWzY8yLjnNMVmj8bycIH+ifKxUW3CJdw=",
+  "Hash": "fBZtRBi3KTThGwdYbkPOVu0LW4CQZHAfBfmSyIs+o9E=",
   "Source": "TirelireProject",
   "BasePath": "_content/TirelireProject",
   "Mode": "Default",
@@ -16,40 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireTP\\TirelireProject\\TirelireProject\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TirelireProject.styles.css",
-      "SourceId": "TirelireProject",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireTP\\TirelireProject\\TirelireProject\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/TirelireProject",
-      "RelativePath": "TirelireProject.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireTP\\TirelireProject\\TirelireProject\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TirelireProject.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireTP\\TirelireProject\\TirelireProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TirelireProject.bundle.scp.css",
-      "SourceId": "TirelireProject",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireTP\\TirelireProject\\TirelireProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/TirelireProject",
-      "RelativePath": "TirelireProject.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireTP\\TirelireProject\\TirelireProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TirelireProject.bundle.scp.css"
-    },
     {
       "Identity": "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireTP\\TirelireProject\\TirelireProject\\wwwroot\\css\\site.css",
       "SourceId": "TirelireProject",

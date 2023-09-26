@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireTP\\TirelireProject\\TirelireProject\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TirelireProject.bundle.scp.css",
-      "PackagePath": "staticwebassets\\TirelireProject.bundle.scp.css"
-    },
-    {
       "Id": "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireTP\\TirelireProject\\TirelireProject\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
