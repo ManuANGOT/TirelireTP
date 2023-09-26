@@ -17,12 +17,12 @@ namespace TirelireProject.Models
         [Required(ErrorMessage = "Le nom du client est requis.")]
         [StringLength(50, ErrorMessage = "Le nom du client ne peut pas dépasser 50 caractères.")]
         [Display(Name = "Nom")]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         [Required(ErrorMessage = "Le prénom du client est requis.")]
         [StringLength(50, ErrorMessage = "Le prénom du client ne peut pas dépasser 50 caractères.")]
         [Display(Name = "Prénom")]
-        public string FirstName { get; set; }
+        public string? FirstName { get; set; }
 
         [Required(ErrorMessage = "La date de naissance du client est requise.")]
         [Display(Name = "Date de naissance")]
@@ -32,24 +32,24 @@ namespace TirelireProject.Models
         [Required(ErrorMessage = "L'email du client est requis.")]
         [StringLength(100, ErrorMessage = "L'email du client doit comporter au moins {2} caractères.", MinimumLength = 6)]
         [DataType(DataType.EmailAddress)]
-        public string EmailAddress { get; set; }
+        public string? EmailAddress { get; set; }
 
         [Required(ErrorMessage = "Le mot de passe du client est requis.")]
         [StringLength(100, ErrorMessage = "Le mot de passe du client doit comporter au moins {2} caractères.", MinimumLength = 6)]
         [DataType(DataType.Password)]
-        public string Password { get; set; }
+        public string? Password { get; set; }
 
         public virtual ICollection<Customer> Customers { get; } = new List<Customer>();
 
         public virtual ICollection<ShoppingCart> ShoppingCarts { get; set; } = new List<ShoppingCart>();
 
-        public ShoppingCart ShoppingCart { get; set; }
+        public ShoppingCart? ShoppingCart { get; set; }
 
         public int? PaymentOrderId { get; set; }
 
 
         [NotMapped]
-        public PaymentOrder PaymentOrder { get; set; }
+        public PaymentOrder? PaymentOrder { get; set; }
 
         public void AddToCart(Product product, int quantity)
         {

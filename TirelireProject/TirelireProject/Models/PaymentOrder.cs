@@ -20,10 +20,10 @@ namespace TirelireProject.Models
 
         // Relations avec le panier
         public int? ShoppingCartId { get; set; } // Identifiant du panier associé
-        public virtual ShoppingCart ShoppingCart { get; set; } // Relation avec le panier
+        public virtual ShoppingCart? ShoppingCart { get; set; } // Relation avec le panier
 
 
         // Relation avec le suivi de l'expédition
-        public virtual ICollection<ShippingStatus> ShippingStatusHistory { get; set; }
+        public virtual ICollection<ShippingStatus>? ShippingStatusHistory { get; set; }
     }
 }
