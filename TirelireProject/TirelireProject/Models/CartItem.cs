@@ -11,8 +11,8 @@ namespace TirelireProject.Models
         // Autres informations spécifiques à l'élément du panier, ajoutez-les ici
 
         // Relations
-        public virtual Product Product { get; set; } // Relation avec le produit
+        public virtual Product? Product { get; set; } // Relation avec le produit
         public int ShoppingCartId { get; set; } // Identifiant du panier associé
-        public virtual ShoppingCart ShoppingCart { get; set; } // Relation avec le panier
+        public virtual ShoppingCart? ShoppingCart { get; set; } // Relation avec le panier
     }
 }

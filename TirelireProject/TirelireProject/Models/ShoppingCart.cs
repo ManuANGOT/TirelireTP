@@ -17,7 +17,7 @@ namespace TirelireProject.Models
  
         // Clé étrangère pour lier ShoppingCart au Customer
         public int CustomerId { get; set; } // id du client qui crée le panier
-        public virtual Customer Customer { get; set; }
+        public virtual Customer? Customer { get; set; }
 
 
         public virtual ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
@@ -86,7 +86,7 @@ namespace TirelireProject.Models
         // Relation avec PaymentOrder
         // Clé étrangère pour lier le ShoppingCart au PaymentOrder
         public int? PaymentOrderId { get; set; }
-        public virtual PaymentOrder PaymentOrder { get; set; }
+        public virtual PaymentOrder? PaymentOrder { get; set; }
 
 
         public virtual ICollection<Product> Products { get; } = new List<Product>();
