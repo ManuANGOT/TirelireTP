@@ -32,10 +32,10 @@ function AppNavbar() {
                     {/* NavDropdown pour créer le menu déroulant */}
                     {isLoggedIn && (
                         <NavDropdown title={`Espace ${userRole}`} id="basic-nav-dropdown">
-                            <NavDropdown.Item href="/customer">Espace Client</NavDropdown.Item>
-                            <NavDropdown.Item href="/admin"> Espace Admin</NavDropdown.Item>
-                            <NavDropdown.Item href="/mod"> Espace Moderateur</NavDropdown.Item>
-                            <NavDropdown.Item href="/assist"> Espace Assistant</NavDropdown.Item>
+                            <NavDropdown.Item href="/Customer">Espace Client</NavDropdown.Item>
+                            <NavDropdown.Item href="/Admin"> Espace Admin</NavDropdown.Item>
+                            <NavDropdown.Item href="/Mod"> Espace Moderateur</NavDropdown.Item>
+                            <NavDropdown.Item href="/Assist"> Espace Assistant</NavDropdown.Item>
                         </NavDropdown>
                     )}
                 </Nav>
