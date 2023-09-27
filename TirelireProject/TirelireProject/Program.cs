@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using TirelireProject.Data;
@@ -32,7 +33,21 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+// Pour relier ASP.NET Core et projet React.
+app.UseStaticFiles();
+
+// Configuration des routes dans ASP.NET Core pour gérer à la fois les appels d'API et les appels à l'application React. CF HomeController
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "react",
+        pattern: "{controller=Home}/{action=ReactApp}/{id?}");
+
+    // Autres routes API (Autres controllers Customer, Admin, Mod, Assist)
+});
+
 app.Run();
+
 
 public partial class Program
 {
