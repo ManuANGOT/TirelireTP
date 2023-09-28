@@ -57,29 +57,35 @@ public partial class Program
     }
 
     public static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureWebHostDefaults(webBuilder =>
-            {
-                webBuilder.ConfigureServices((context, services) =>
-                {
-                    services.AddSingleton<MyAuthenticationHandler>();
-                    services.AddAuthentication("MyScheme")
-                        .AddScheme<AuthenticationSchemeOptions, MyAuthenticationHandler>("MyScheme", options => { });
-                    services.AddAuthorization();
-                });
+     Host.CreateDefaultBuilder(args)
+         .ConfigureWebHostDefaults(webBuilder =>
+         {
+             webBuilder.ConfigureServices((context, services) =>
+             {
+                 services.AddAuthentication("MyScheme")
+                     .AddScheme<AuthenticationSchemeOptions, MyAuthenticationHandler>("MyScheme", options => { });
+                 services.AddAuthorization();
 
-                webBuilder.Configure((context, app) =>
-                {
-                    app.UseAuthentication();
-                    app.UseAuthorization();
+                 services.AddScoped<MyAuthenticationHandler>();
+                 services.AddControllersWithViews();
+             });
 
-                    app.UseEndpoints(endpoints =>
-                    {
-                        endpoints.MapGet("/", async context =>
-                        {
-                            await context.Response.WriteAsync("Hello World!");
-                        });
-                    });
-                });
-            });
+             webBuilder.Configure((context, app) =>
+             {
+                 app.UseAuthentication();
+                 app.UseAuthorization();
+
+                 app.UseEndpoints(endpoints =>
+                 {
+                     endpoints.MapControllerRoute(
+                         name: "react",
+                         pattern: "{controller=Home}/{action=ReactApp}/{id?}");
+
+                     // Autres routes API (Autres controllers Customer, Admin, Mod, Assist)
+                     endpoints.MapControllerRoute(
+                         name: "default",
+                         pattern: "{controller=Home}/{action=Index}/{id?}");
+                 });
+             });
+         });
 }
