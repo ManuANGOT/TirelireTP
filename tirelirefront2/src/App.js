@@ -22,6 +22,7 @@ import image4 from './Images/0004.jpg';
 import image5 from './Images/0005.jpg';
 import image6 from './Images/0006.jpg';
 import image7 from './Images/0021.jpg';
+import ShoppingCartPage from './Pages/ShoppingCartPage';
 
 function App() {
     return (
@@ -43,6 +44,7 @@ function App() {
                         <Route path="/Mod" element={<ModPage />} />
                         <Route path="/Assist" element={<AssistPage />} />
                         <Route path="/Registration" element={<RegistrationPage />} />
+                        <Route path="/ShoppingCart" element={<ShoppingCartPage />} />
                     </Routes>
                     <Carousel>
                         <Carousel.Item>
