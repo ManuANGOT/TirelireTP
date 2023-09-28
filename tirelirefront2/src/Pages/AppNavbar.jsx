@@ -1,10 +1,5 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import AdminPage from './AdminPage';
-import AssistPage from './AssistPage';
-import CustomerPage from './CustomerPage';
-import ModPage from './ModPage';
-import ProductPage from './ProductPage';
 
 
 function AppNavbar() {
@@ -28,14 +23,17 @@ function AppNavbar() {
 
     return (
         <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="/">Piggy's Coins</Navbar.Brand>
+            <Navbar.Brand href="/">Piggy's Coins - Home</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    {isLoggedIn && <Nav.Link href="/shop">Nos produits</Nav.Link>}
+                    {isLoggedIn && <Nav.Link href="/Products">Nos produits</Nav.Link>}
+                </Nav>
+                <Nav className="mr-auto">
+                    {isLoggedIn && <Nav.Link href="/EShop">E-Shop</Nav.Link>}
                 </Nav>
                 <Nav>
-                    {/* NavDropdown pour créer le menu déroulant */}
+                    {/* Menu déroulant */}
                     {isLoggedIn && (
                         <NavDropdown title={`Espace ${userRole}`} id="basic-nav-dropdown">
                             <NavDropdown.Item href="/Customer"> Client </NavDropdown.Item>

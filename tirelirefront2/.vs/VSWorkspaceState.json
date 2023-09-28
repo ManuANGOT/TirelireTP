@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\public",
-    "\\src"
+    "\\src",
+    "\\src\\Pages"
   ],
-  "SelectedNode": "\\src\\App.js",
+  "SelectedNode": "\\src\\Pages\\EShopPage.jsx",
   "PreviewInSolutionExplorer": false
 }

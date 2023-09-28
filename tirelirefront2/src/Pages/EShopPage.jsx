@@ -1,6 +1,7 @@
 ﻿import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-function CustomerPage() {
+function EShopPage() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -15,9 +16,6 @@ function CustomerPage() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Vous pouvez ajouter ici la logique de validation du formulaire
-        // Par exemple, envoyer les données au serveur ou effectuer une vérification côté client.
-        // Pour cet exemple, nous allons simplement afficher les valeurs entrées.
 
         console.log('Email:', email);
         console.log('Password:', password);
@@ -25,8 +23,8 @@ function CustomerPage() {
 
     return (
         <div>
-            <h1>Espace Client</h1>
-            <p>Veuillez vous authentifier :</p>
+            <h1> E-Boutique </h1>
+            <p>Déjà client ? Veuillez vous authentifier :</p>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="email">Email: </label>
@@ -52,8 +50,9 @@ function CustomerPage() {
                 </div>
                 <button type="submit">Validation</button>
             </form>
+            <Link to="/Registration">Inscription</Link> {/* Ajoutez ce bouton d'inscription */}
         </div>
     );
 }
 
-export default CustomerPage;
+export default EShopPage;
