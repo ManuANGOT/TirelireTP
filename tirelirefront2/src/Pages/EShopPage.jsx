@@ -46,13 +46,20 @@ function EShopPage() {
                         value={password}
                         onChange={handlePasswordChange}
                         required
+                     
                     />
+                    
                 </div>
                 <button type="submit">Validation</button>
             </form>
-            <Link to="/Registration">Inscription</Link> {/* Ajoutez ce bouton d'inscription */}
+            <Link to="/Registration">Pas encore client ? Veuillez vous inscrire, ici.</Link> {/* Ajoutez ce bouton d'inscription */}
         </div>
+   
     );
+    //test
+    console.log('Email:', email);
+    console.log('Password:', password);
+
 }
 
 export default EShopPage;
