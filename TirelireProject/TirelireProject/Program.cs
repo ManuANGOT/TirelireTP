@@ -43,7 +43,7 @@ app.UseEndpoints(endpoints =>
         name: "react",
         pattern: "{controller=Home}/{action=ReactApp}/{id?}");
 
-    // Autres routes API (Autres controllers Customer, Admin, Mod, Assist)
+    // Autres routes API (Autres controllers Customer, Admin, Mod, Assist) en cours
 });
 
 app.Run();

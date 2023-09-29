@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireTP\\TirelireProject\\TirelireProject\\TirelireProject.csproj": {}
+    "C:\\Users\\User1\\OneDrive\\Bureau\\TpGk\\TirelireTP\\TirelireProject\\TirelireProject\\TirelireProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireTP\\TirelireProject\\TirelireProject\\TirelireProject.csproj": {
+    "C:\\Users\\User1\\OneDrive\\Bureau\\TpGk\\TirelireTP\\TirelireProject\\TirelireProject\\TirelireProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireTP\\TirelireProject\\TirelireProject\\TirelireProject.csproj",
+        "projectUniqueName": "C:\\Users\\User1\\OneDrive\\Bureau\\TpGk\\TirelireTP\\TirelireProject\\TirelireProject\\TirelireProject.csproj",
         "projectName": "TirelireProject",
-        "projectPath": "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireTP\\TirelireProject\\TirelireProject\\TirelireProject.csproj",
-        "packagesPath": "C:\\Users\\GK\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GK\\Desktop\\DiversManu\\TirelireTP\\TitelireTp\\TirelireTP\\TirelireProject\\TirelireProject\\obj\\",
+        "projectPath": "C:\\Users\\User1\\OneDrive\\Bureau\\TpGk\\TirelireTP\\TirelireProject\\TirelireProject\\TirelireProject.csproj",
+        "packagesPath": "C:\\Users\\User1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User1\\OneDrive\\Bureau\\TpGk\\TirelireTP\\TirelireProject\\TirelireProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\GK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
