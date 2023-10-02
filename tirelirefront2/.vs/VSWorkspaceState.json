@@ -5,6 +5,10 @@
     "\\src",
     "\\src\\Pages"
   ],
+<<<<<<< HEAD
   "SelectedNode": "\\src\\Pages\\ShoppingCartPage.jsx",
+=======
+  "SelectedNode": "\\src\\App.css",
+>>>>>>> 1b6f81e443495a2e891f3c94881803f24ddd4604
   "PreviewInSolutionExplorer": false
 }

@@ -45,11 +45,7 @@ public class MyAuthenticationHandler : AuthenticationHandler<AuthenticationSchem
 
         // return AuthenticateResult.Fail("Échec de l'authentification");
         {
-            // Vous pouvez laisser cette méthode vide s'il n'y a pas de logique d'authentification personnalisée à gérer ici.
-            // Si vous avez déjà implémenté la logique d'authentification dans la méthode AuthenticateAsync(),
-            // vous n'avez peut-être pas besoin de mettre de code supplémentaire ici.
-            // Cependant, la méthode doit être présente pour respecter l'interface.
-
+           
             return AuthenticateResult.NoResult(); // Vous pouvez retourner NoResult si vous ne traitez rien ici.
         }
     }
@@ -92,13 +88,11 @@ public class MyAuthenticationHandler : AuthenticationHandler<AuthenticationSchem
         }
     }
 
-    // Méthode pour vérifier le hachage du mot de passe (à implémenter)
+    // Méthode pour vérifier le hachage du mot de passe 
     private bool VerifyPasswordHash(string password, string hashedPassword)
     {
-        // Ajoutez ici la logique pour vérifier le hachage du mot de passe
-        // Par exemple, utilisez un algorithme de hachage tel que BCrypt ou SHA-256
-        // Comparez le hachage du mot de passe avec le hachage stocké dans la base de données
-        // Retournez true si les hachages correspondent, sinon false
+        // Logique pour vérifier le hachage du mot de passe
+        
         return password == hashedPassword;
     }
 }

@@ -15,10 +15,9 @@ function CustomerPage() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Vous pouvez ajouter ici la logique de validation du formulaire
-        // Par exemple, envoyer les données au serveur ou effectuer une vérification côté client.
-        // Pour cet exemple, nous allons simplement afficher les valeurs entrées.
-
+        //formulaires
+        // données au serveur ou effectuer une vérification côté client.
+        
         console.log('Email:', email);
         console.log('Password:', password);
     };

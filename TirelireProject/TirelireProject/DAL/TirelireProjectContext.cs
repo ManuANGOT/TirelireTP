@@ -15,17 +15,11 @@ namespace TirelireProject.Data
         }
 
         public DbSet<TirelireProject.Models.Product> Product { get; set; } = default!;
-
         public DbSet<TirelireProject.Models.Customer>? Customer { get; set; }
-
         public DbSet<TirelireProject.Models.Admin>? Admin { get; set; }
         public DbSet<TirelireProject.Models.Mod>? Mod { get; set; }
-
         public DbSet<TirelireProject.Models.Assist>? Assist { get; set; }
-
-
         public DbSet<TirelireProject.Models.Role>? Role { get; set; }
-
         public DbSet<TirelireProject.Models.ShoppingCart>? ShoppingCart { get; set; }
 
         public DbSet<Customer> Customers { get; set; }
