@@ -1,0 +1,35 @@
+Chef de projet :
+- Rédige cahier des charges
+- découpe en opérations
+- Répartit masse de travail
+- définit les time-box
+- Etablit la vélovité de chaque tâche.
+- Valide fin des travaux
+- Apport améliorations au Back-log
+- Assure la bonne tenue des cérémonies agile
+- évalue technicité et valide avec le client
+
+Scrum Master :
+
+Faciliter les réunions Scrum 
+Supprimer les obstacles :
+Soutien à l'adoption Agile 
+Protection de l'équipe 
+Mesure et amélioration : Il aide l'équipe à suivre les métriques Agile et à identifier des moyens d'amélioration.
+
+Product Owner :
+Gestion du backlog : Lresponsable de la gestion du backlog des produits, en priorisant les éléments en fonction de la valeur pour le client.
+Clarification des exigences : Il travaille en étroite collaboration avec l'équipe de développement pour clarifier les exigences des éléments du backlog.
+Décisions de produit : Le Product Owner prend des décisions importantes concernant le produit, notamment ce qui doit être inclus dans les versions futures.
+Validation des fonctionnalités : s'assurer que les fonctionnalités développées répondent aux besoins et aux attentes des utilisateurs.
+Communication avec les parties prenantes : Le Product Owner communique régulièrement avec les parties prenantes pour recueillir des commentaires 
+et des informations sur les besoins changeants du produit.
+
+Développeurs :
+Développement de fonctionnalités : responsables de la conception, du développement et de la livraison des fonctionnalités du produit.
+Auto-organisation : Ils s'auto-organisent pour déterminer comment ils vont atteindre leurs objectifs lors de chaque sprint.
+Collaboration étroite : collaborent étroitement avec le Product Owner pour comprendre les exigences et avec le Scrum Master pour résoudre les obstacles.
+Tests et assurance qualité : responsables de la qualité du code produit et réalisent des tests
+ pour s'assurer que les fonctionnalités répondent aux critères d'acceptation.
+Engagement dans les rétrospectives : Les développeurs participent activement aux réunions de rétrospective pour identifier des améliorations
+dans leur processus de développement.
