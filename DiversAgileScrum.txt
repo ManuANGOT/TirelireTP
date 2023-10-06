@@ -5,12 +5,11 @@ Chef de projet :
 - définit les time-box
 - Etablit la vélovité de chaque tâche.
 - Valide fin des travaux
-- Apport améliorations au Back-log
+- Apporte améliorations au Back-log
 - Assure la bonne tenue des cérémonies agile
 - évalue technicité et valide avec le client
 
 Scrum Master :
-
 Faciliter les réunions Scrum 
 Supprimer les obstacles :
 Soutien à l'adoption Agile 
